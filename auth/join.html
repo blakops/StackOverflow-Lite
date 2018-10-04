@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,6 @@
             padding: 10px;
             }
             .grid-item {
-
             }
             .register label{
                 /* margin-bottom:3%; */
@@ -45,6 +45,7 @@
             }
     </style>
 </head>
+
 <body>
     <!-- Navigation bar goes here -->
 
@@ -54,40 +55,62 @@
         <div class="grid-item register">
             <!-- Register Goes Here -->
             <div>
-            
-                    <h1>Register</h1>
-                    <form action="" method="POST" enctype="multipart/form-data">
-                        <label for="UserName">Username</label>
-                        <br/>
-                        <input type="text" name="username"  size="40" placeholder="Unique Username">
-                        <br/><br/>
-                        <label for="email">Email</label>
-                        <br/>
-                        <input type="email" name="email"  size="40" placeholder="some_name@provider.com">
-                        <br/><br/>
-                        <label for="password">Password</label>
-                        <br/>
-                        <input type="password" name="password" size="40" placeholder="************">
-                        
-                        <br/><br/>
-                        <input type="submit" name="register" value="Register" class="btn">
-                        <br/>
-                        <br/>
-                        OR Register With &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <button class="google_button">Google</button>
-                        
-                        <button  class="facebook_button">Facebook</button>
-                    </form>
-                
+
+                <h1>Register</h1>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <label for="UserName">Username</label>
+                    <br />
+                    <input type="text" name="username" size="40" placeholder="Unique Username">
+                    <br /><br />
+                    <label for="email">Email</label>
+                    <br />
+                    <input type="email" name="email" size="40" placeholder="some_name@provider.com">
+                    <br /><br />
+                    <label for="password">Password</label>
+                    <br />
+                    <input type="password" name="password" size="40" placeholder="************">
+
+                    <br /><br />
+                    <input type="submit" name="register" value="Register" class="btn">
+                    <br />
+                    <br />
+                    OR Register With &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="google_button">Google</button>
+
+                    <button class="facebook_button">Facebook</button>
+                </form>
+
             </div>
         </div>
         <div class="grid-item">
             <!-- Login Goes Here -->
-            Login Section here
-        </div>  
-        <div class="grid-item"></div>  
+
+            <h1>Login</h1>
+            <style>
+                .textbox{
+        	width: 100%;
+        	overflow: hidden;
+        	font-size: 20px;
+        	padding: 8px 0;
+        	margin: 35px 0;
+            }
+        </style>
+            <div class="textbox">
+                <input type="text" size="40" placeholder="Username" name="" value="">
+            </div>
+
+            <div class="textbox">
+                <input type="password" size="40" placeholder="Password" name="" value="">
+            </div>
+
+            <input class="btn" type="button" name="" value="Sign in">
+        </div>
     </div>
+    <div class="grid-item"></div>
+    </div>
+
 
     <!-- Footer Goes here -->
 </body>
+
 </html>
