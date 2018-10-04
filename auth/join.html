@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>StackOverflow-Lite</title>
     <style>
         .grid-container {
@@ -43,12 +44,86 @@
                 background-color: #ffffff;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
             }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                border: 1px solid #e7e7e7;
+                background-color: #f3f3f3;
+                
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: #666;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover:not(.active) {
+                background-color: #1696d8;
+                opacity:0.8;
+            }
+
+            li a.active {
+                color: white;
+                background-color: #1696d8;
+                margin: 10px;
+
+
+            }
+            input[type=text] {
+                width: 130px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 2px;
+                font-size: 16px;
+                background-color: white;
+                background-position: 10px 10px; 
+                background-repeat: no-repeat;
+                padding: 10px 15px 15px 20px;
+                
+                transition: width 0.4s ease-in-out;
+            }
+
+            input[type=text]:focus {
+                width: 100%;
+            }
+            .login {
+            float: right;
+            margin: 10px;
+            }
+            .signup {
+            float: right;
+            margin: 10px; 
+            }
+            .search {
+            margin: 10px;
+            }
+
+            .item4 {
+            background: lightblue;
+            grid-area: footer;
+            text-align: center;
+            }
+
     </style>
 </head>
 
 <body>
     <!-- Navigation bar goes here -->
-
+    <ul>
+        <li><a href="index.html" class="active" href="#home">StackOverFlow Lite</a></li>
+        <li class="search"><input type="text" name="search" placeholder="search" maxlength="260"><br></li>
+        <!-- <li class="login"><a href="join.html">LOGIN</a></li>
+        <li class="signup"><a href="join.html">SIGN UP</a></li> -->
+      </ul>
     <!-- Body wrapper goes here -->
     <div class="grid-container">
         <div class="grid-item"></div>
@@ -111,6 +186,7 @@
 
 
     <!-- Footer Goes here -->
+    <div class="item4">BlakOps ©  2018</div>
 </body>
 
 </html>
