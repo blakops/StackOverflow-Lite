@@ -26,6 +26,22 @@
                 color: white;
                 border-radius: 8px;
                 cursor: pointer;
+                font-weight: bolder;
+            }
+            .facebook_button{
+                margin-left: 20px;
+                padding: 2%;
+                background-color: rgb(119, 119, 241);
+                font-weight: bolder;
+                border-radius: 8px;
+                /* #385499 */
+                color: white;
+            }
+            .google_button{
+                padding: 2%;
+                border-radius: 7px;
+                background-color: #ffffff;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
             }
     </style>
 </head>
@@ -47,13 +63,20 @@
                         <br/><br/>
                         <label for="email">Email</label>
                         <br/>
-                        <input type="email" name="email"  size="40" placeholder="A Valid Email">
+                        <input type="email" name="email"  size="40" placeholder="some_name@provider.com">
                         <br/><br/>
                         <label for="password">Password</label>
                         <br/>
-                        <input type="password" name="password" size="40" placeholder="Your secret key">
+                        <input type="password" name="password" size="40" placeholder="************">
+                        
                         <br/><br/>
                         <input type="submit" name="register" value="Register" class="btn">
+                        <br/>
+                        <br/>
+                        OR Register With &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button class="google_button">Google</button>
+                        
+                        <button  class="facebook_button">Facebook</button>
                     </form>
                 
             </div>
