@@ -37,3 +37,14 @@ class Admin(User):
     def delete_user(self, User):
         return self.user.remove(User)
 
+class collaborator(User):
+
+
+    def __init__(self):
+        super.__init__(name = name, email= email, password= password, role='Collab', user_id =id)
+
+    def add_collab(self, colab):
+        self.user.append(colab)
+
+    def delete_collab(self, collab):
+        self.user.remove(collab)
